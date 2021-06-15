@@ -21,7 +21,7 @@ def main():
     with user_client:
         while True:
             print("[INFO] starting to check uptime..")
-            edit_text = f"🔰FREAK_BOTS STATUS🔰\n\n__( All bots are checked automatically if any correction report it )__\n\n\n"
+            edit_text = f"FREAK_BOTS STATUS\n\n__( All bots are checked automatically if any correction report it )__\n\n\n"
             for bot in bots:
                 print(f"[INFO] checking @{bot}")
                 snt = user_client.send_message(bot, '/start')
