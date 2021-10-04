@@ -24,7 +24,7 @@ def main():
             edit_text = f"🔰CoinsRig Status🔰\n\n__( All bots are checked automatically if any correction report it )__\n\n\n"
             for bot in bots:
                 print(f"[INFO] checking @{bot}")
-                snt = user_client.send_message(bot, '/start')
+                snt = user_client.send_message(bot, '/coins')
 
                 time.sleep(15)
 
