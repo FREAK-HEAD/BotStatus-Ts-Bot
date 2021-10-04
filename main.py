@@ -21,7 +21,7 @@ def main():
     with user_client:
         while True:
             print("[INFO] starting to check uptime..")
-            edit_text = f"FREAK_BOTS STATUS\n\n__( All bots are checked automatically if any correction report it )__\n\n\n"
+            edit_text = f"🔰𝐓𝐫𝐚𝐜𝐤𝐬𝐭𝐮𝐝𝐢𝐨'𝐬 𝐁𝐨𝐭𝐬 𝐒𝐭𝐚𝐭𝐮𝐬🔰\n\n__( All bots are checked automatically if any correction report it )__\n\n\n"
             for bot in bots:
                 print(f"[INFO] checking @{bot}")
                 snt = user_client.send_message(bot, '/start')
@@ -42,15 +42,15 @@ def main():
             time_now = datetime.datetime.now(pytz.timezone('Asia/Kolkata'))
             formatted_time = time_now.strftime("%d %B %Y %I:%M %p")
 
-            edit_text += f"**Updated on {formatted_time} (**IST**)**"
+            edit_text += f"**Updated on {formatted_time} (IST)**"
 
             for status_message_id in status_message_ids:
                 user_client.edit_message_text(int(update_channel), status_message_id,
                                          edit_text)
                 time.sleep(5)
-            print(f"[INFO] everything done! sleeping for 1 hour...")
+            print(f"[INFO] everything done! sleeping for 3 hours...")
 
-            time.sleep(60 * 60)
+            time.sleep(864000)
 
 
 if __name__ == "__main__":
